@@ -3,6 +3,7 @@ import SectionHeading from "@/components/SectionHeading";
 import PostCard from "@/components/PostCard";
 import ReportCard from "@/components/ReportCard";
 import ImageSlot from "@/components/ImageSlot";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { siteConfig } from "@config";
 import { getAll } from "@/lib/content";
 
@@ -27,6 +28,22 @@ export default function Home() {
             </p>
           </div>
           <ImageSlot ratio="4/5" label="브랜드 비주얼" />
+        </div>
+      </section>
+
+      {/* 뉴스레터 구독 */}
+      <section className="container-page py-16">
+        <div className="grid gap-8 rounded-card border border-line bg-card p-8 md:grid-cols-[1fr_1.2fr] md:p-10">
+          <div>
+            <p className="eyebrow mb-3">뉴스레터</p>
+            <h2 className="font-display text-2xl font-bold text-primary sm:text-3xl">
+              오래 입을 기본을 고르는 기준
+            </h2>
+            <p className="mt-4 leading-relaxed text-ink-sub">
+              MAGMA의 신상품, 저널, 실적 리포트 업데이트를 이메일로 받아보세요.
+            </p>
+          </div>
+          <NewsletterSignup />
         </div>
       </section>
 
