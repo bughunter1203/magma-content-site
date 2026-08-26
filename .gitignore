@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# local development data
+/data/newsletter-subscribers.jsonl
+
 # next.js
 /.next/
 /out/
